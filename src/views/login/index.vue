@@ -93,7 +93,6 @@ const changePwdType = () => {
 }
 
 // 触发登录请求动作
-
 const loading = ref(false)
 const store = useStore()
 const loginFormRef = ref(null)
@@ -106,7 +105,6 @@ const handlerLogin = () => {
     store
       .dispatch('user/login', loginForm.value)
       .then((data) => {
-        console.log(data)
         loading.value = false
         // TODO: 3.登录后处理
       })
