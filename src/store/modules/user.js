@@ -8,7 +8,7 @@ import { setTimeStamp } from '../../utils/auth'
 export default {
   namespaced: true,
   state: () => ({
-    token: getItem() || '',
+    token: getItem('token') || '',
     userInfo: {}
   }),
   mutations: {
